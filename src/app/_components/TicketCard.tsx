@@ -18,18 +18,24 @@ const TicketCard: React.FC<TicketCardProps> = ({ data }) => {
   const { thumbnail, teamName, time, place } = data;
 
   return (
-    <div className="shadow-md p-2.5 relative overflow-hidden">
+    <div className="drop-shadow-md">
+      <figure className="p-3 bg-white">
+        <Image
+          src={thumbnail}
+          className="w-full shadow-lg"
+          alt="Avatar"
+          width={300}
+          height={80}
+        />
+      </figure>
       <Image
-        src={thumbnail}
-        className="w-full shadow-lg"
-        alt="Avatar"
+        src="/images/ticket-gap.svg"
+        className="w-full -my-1"
+        alt="Ticket Gap"
         width={300}
-        height={80}
+        height={36}
       />
-      <div className="w-5 h-5 bg-[#F9F8FF] shadow-inner  rounded-full absolute top-2/3 -left-2.5"></div>
-      <hr className="border-dashed border border-gray-300 my-5" />
-      <div className="w-5 h-5 bg-[#F9F8FF] shadow-inner  rounded-full absolute top-2/3 -right-2.5"></div>
-      <div className="text-center">
+      <div className="text-center bg-white p-3">
         <h4 className="font-medium text-lg mb-4 text-center">{teamName}</h4>
         <p className="text-sm mt-2 mb-3">
           {time?.date} | {time?.day} | {time?.time}
