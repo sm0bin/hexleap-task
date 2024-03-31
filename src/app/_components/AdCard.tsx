@@ -11,7 +11,7 @@ const AdCard = () => {
           height={300}
           alt="Advertisement title"
         />
-        <div className="bg-black px-4 py-1 font-bold text-xs absolute top-0 right-0">
+        <div className="bg-black px-4 py-1 font-bold text-xs absolute top-0 right-0 text-white">
           Ad
         </div>
       </figure>
