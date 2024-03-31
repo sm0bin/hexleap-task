@@ -2,7 +2,7 @@ import TicketSlider from "./TicketSlider";
 
 const TicketSection = () => {
   return (
-    <section className="bg-[#F9F8FF] pt-16 pb-12 mb-20">
+    <section className="bg-[#F9F8FF] bg-transparent md:dark:bg-[#18282A] pt-16 pb-12 mb-20">
       <h2 className="text-5xl font-bold text-center mb-6">
         Collection Spotlight
       </h2>
